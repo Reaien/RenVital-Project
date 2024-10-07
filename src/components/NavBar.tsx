@@ -1,8 +1,6 @@
 import logo from "../assets/images/logo.png";
 
-type Props = {};
-
-const NavBar = (props: Props) => {
+function NavBar() {
   return (
     <>
       <nav className="bg-white border-gray-200 ">
@@ -19,9 +17,9 @@ const NavBar = (props: Props) => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3  text-emerald-700 rounded md:p-0 "
+                  className="block py-2 px-3 text-emerald-700 rounded md:p-0 "
                 >
-                  Home
+                  Inicio
                 </a>
               </li>
 
@@ -55,6 +53,6 @@ const NavBar = (props: Props) => {
       </nav>
     </>
   );
-};
+}
 
 export default NavBar;

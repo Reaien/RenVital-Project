@@ -1,3 +1,4 @@
+import CardSection from "./components/CardSection";
 import HeroImage from "./components/HeroImage";
 import NavBar from "./components/NavBar";
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <NavBar />
       <HeroImage />
+      <CardSection />
     </>
   );
 }

@@ -2,7 +2,7 @@ import HeroPhoto from "../assets/images/banner.jpg";
 
 type Props = {};
 
-const HeroImage = (props: Props) => {
+function HeroImage({}: Props) {
   return (
     <>
       <section className="md:h-[600px]  md:flex md:justify-center">
@@ -23,6 +23,6 @@ const HeroImage = (props: Props) => {
       </section>
     </>
   );
-};
+}
 
 export default HeroImage;
