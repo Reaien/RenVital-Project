@@ -21,7 +21,7 @@ function Card({ icon, texto1, texto2 }: Props) {
           <p>{texto1}</p>
           <div className="mt-5 flex  justify-center items-center gap-1">
             <p>{texto2}</p>
-            <HiOutlineArrowNarrowRight className="w-5 h-5" />
+            <HiOutlineArrowNarrowRight className="hover:cursor-pointer w-6 h-6 " />
           </div>
         </div>
       </div>
