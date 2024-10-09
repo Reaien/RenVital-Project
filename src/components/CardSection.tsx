@@ -3,19 +3,23 @@ import { PiBowlFood } from "react-icons/pi";
 import { FaCommentMedical } from "react-icons/fa";
 
 import Card from "../components/Card";
+import { Link } from "react-router-dom";
 type Props = {};
 
 function CardSection({}: Props) {
   return (
     <>
-      <section className="md:flex gap-16 justify-center ">
-        <Card
-          texto2={"Revisa aquí"}
-          texto1={
-            "Conoce a fondo sobre las enfermedades renales y ayuda a provenirlas"
-          }
-          icon={<HiOutlineBookOpen className="h-20 w-20 text-emerald-700" />}
-        />
+      <section className="lg:flex gap-16 justify-center grid">
+        <Link to={"/info"}>
+          <Card
+            texto2={"Revisa aquí"}
+            texto1={
+              "Conoce a fondo sobre las enfermedades renales y ayuda a provenirlas"
+            }
+            icon={<HiOutlineBookOpen className="h-20 w-20 text-emerald-700" />}
+          />
+        </Link>
+
         <Card
           texto2={"Revisa aquí"}
           texto1={"Explora las opciones alimenticias para una vida saludable"}
