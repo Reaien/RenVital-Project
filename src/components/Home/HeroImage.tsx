@@ -1,4 +1,4 @@
-import HeroPhoto from "../assets/images/banner.jpg";
+import HeroPhoto from "../../assets/images/banner.jpg";
 
 type Props = {};
 

@@ -2,7 +2,7 @@ import { HiOutlineBookOpen } from "react-icons/hi";
 import { PiBowlFood } from "react-icons/pi";
 import { FaCommentMedical } from "react-icons/fa";
 
-import Card from "../components/Card";
+import Card from "../Global/Card";
 import { Link } from "react-router-dom";
 type Props = {};
 

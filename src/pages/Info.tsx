@@ -1,6 +1,6 @@
-import NavBar from "../components/NavBar";
-import InfoPdf from "../components/InfoPdf";
-import Title from "../components/Title";
+import NavBar from "../components/Global/NavBar";
+import InfoPdf from "../components/Info/InfoPdf";
+import Title from "../components/Global/Title";
 
 type Props = {};
 

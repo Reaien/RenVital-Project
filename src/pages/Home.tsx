@@ -1,7 +1,7 @@
-import NavBar from "../components/NavBar";
-import HeroImage from "../components/HeroImage";
-import CardSection from "../components/CardSection";
-import InfoSection from "../components/InfoSection";
+import NavBar from "../components/Global/NavBar";
+import HeroImage from "../components/Home/HeroImage";
+import CardSection from "../components/Home/CardSection";
+import InfoSection from "../components/Info/InfoSection";
 
 type Props = {};
 

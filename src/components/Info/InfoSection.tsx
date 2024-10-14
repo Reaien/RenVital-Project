@@ -1,5 +1,5 @@
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import infoImage from "../assets/images/infoimage.png";
+import infoImage from "../../assets/images/infoimage.png";
 import InfoBox from "./InfoBox";
 import { Link } from "react-router-dom";
 
