@@ -48,6 +48,14 @@ function NavBar() {
                   Alimentación
                 </a>
               </li>
+              <li>
+                <Link
+                  to={"/login"}
+                  className="block py-2 px-3  text-emerald-700 rounded md:p-0 "
+                >
+                  Login
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import Forum from "../pages/Forum";
 import Info from "../pages/Info";
 import Comunidad from "../pages/Comunidad";
+import Login from "../pages/Login";
 
 const AppRouter = () => {
   return (
@@ -11,7 +12,6 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/info" element={<Info />} />
         <Route path="/forum" element={<Forum />} />
-        <Route path="/comunidad" element={<Comunidad />} />
       </Routes>
     </Router>
   );
