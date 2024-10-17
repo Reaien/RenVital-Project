@@ -12,6 +12,8 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/info" element={<Info />} />
         <Route path="/forum" element={<Forum />} />
+        <Route path="/comunidad" element={<Comunidad />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
