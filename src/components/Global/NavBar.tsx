@@ -33,9 +33,12 @@ function NavBar() {
                 </Link>
               </li>
               <li>
-                <a className="block py-2 px-3  text-emerald-700 rounded md:p-0 ">
+                <Link
+                  to={"/comunidad"}
+                  className="block py-2 px-3  text-emerald-700 rounded md:p-0 "
+                >
                   Comunidad
-                </a>
+                </Link>
               </li>
               <li>
                 <a
