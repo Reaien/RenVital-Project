@@ -8,6 +8,7 @@ type Props = {};
 function CardLogin({}: Props) {
   const handlerGoogleLogin = async (credentialResponse: CredentialResponse) => {
     const credentialResponseDecoded = jwtDecode(credentialResponse.credential);
+    const userToken = credentialResponse.credential;
     console.log(credentialResponseDecoded);
 
     // Crear el payload con los datos del usuario
@@ -23,6 +24,7 @@ function CardLogin({}: Props) {
       await axios
         .post(URL, userDataPayload, {
           headers: {
+            Authorization: `Bearer ${userToken}`,
             "Content-Type": "application/json",
           },
         })
