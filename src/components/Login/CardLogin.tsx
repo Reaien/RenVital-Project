@@ -29,7 +29,11 @@ function CardLogin({}: Props) {
           },
         })
         .then(() => {
+
+          console.log("enviad");
+
           console.log("enviado");
+
         });
     } catch (error) {
       console.log(error);

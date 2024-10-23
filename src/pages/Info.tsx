@@ -2,6 +2,10 @@ import NavBar from "../components/Global/NavBar";
 import InfoPdf from "../components/Info/InfoPdf";
 import Title from "../components/Global/Title";
 
+import Footer from "../components/Global/Footer";
+
+
+
 type Props = {};
 
 function Info({}: Props) {
@@ -15,6 +19,7 @@ function Info({}: Props) {
         }
       />
       <InfoPdf />
+      <Footer/>
     </>
   );
 }
