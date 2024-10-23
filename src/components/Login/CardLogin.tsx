@@ -9,13 +9,14 @@ function CardLogin({}: Props) {
   const handlerGoogleLogin = async (credentialResponse: CredentialResponse) => {
     const credentialResponseDecoded = jwtDecode(credentialResponse.credential);
     const userToken = credentialResponse.credential;
+    console.log(credentialResponse);
     console.log(credentialResponseDecoded);
 
     // Crear el payload con los datos del usuario
     const userDataPayload = {
       email: credentialResponseDecoded.email,
-      nombre: credentialResponseDecoded.name, // Asegúrate de que este sea el nombre correcto del campo
-      profile_pic: credentialResponseDecoded.picture, // Asegúrate de que este sea el nombre correcto del campo
+      nombre: credentialResponseDecoded.name,
+      profile_pic: credentialResponseDecoded.picture,
     };
 
     const URL = "http://localhost:8080/users";
