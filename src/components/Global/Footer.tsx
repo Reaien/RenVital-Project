@@ -26,7 +26,7 @@ const Footer = () => {
             <li className="theme.listStyleType * p-0:">
               <a
                 className="flex text-center mb-[10px]"
-                href="https://open.spotify.com/intl-es/artist/37EytgomE1ofIndtrOGoy2?si=MC2MktG4T8ObO2PmcZGhBQ"
+                href="https://www.facebook.com/"
               >
                 <FaFacebook className="mr-2" /> Faceboock
               </a>
@@ -34,7 +34,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center bottom-[10px]">
               <a
-                href="https://www.instagram.com/paya.cl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                href="https://www.instagram.com/"
                 className="flex text-center mb-[10px]"
               >
                 <FaInstagram className="mr-2" /> Instagram
@@ -47,7 +47,7 @@ const Footer = () => {
                 href="https://twitter.com"
                 className="flex text-center mb-[10px]"
               >
-                <FaYoutube className="mr-2" /> Youtube
+                <FaYoutube className="mr-2" /> twitter
               </a>
             </li>
           </ul>
