@@ -26,7 +26,7 @@ function CardSection({}: Props) {
           icon={<PiBowlFood className="h-20 w-20 text-emerald-700" />}
         />
         <Card
-          texto2={"Revisa aquí"}
+          texto2={"Revisa aquí"}  
           texto1={"Preguntale a nuestros especialistas sobre dudas específicas"}
           icon={<FaCommentMedical className="h-20 w-20 text-emerald-700" />}
         />

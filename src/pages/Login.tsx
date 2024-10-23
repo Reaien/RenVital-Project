@@ -11,10 +11,7 @@ function Login({}: Props) {
     <>
       <NavBar />
       <CardLogin />
-
       <Footer/>
-=======
-
     </>
   );
 }

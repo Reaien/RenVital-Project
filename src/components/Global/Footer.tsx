@@ -2,10 +2,10 @@ import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa"; // Importa 
 
 const Footer = () => {
   return (
-    <footer className=" px-10 py-5 text-center bg-gradient-to-b bg-emerald-300/60 from-white ">
+    <footer className=" px-10 py-0 text-center bg-gradient-to-b bg-emerald-300/60 from-white ">
       <div className="inline-flex justify-between max-w-[1000px] m-0 flex-wrap">
-        <div className="flex-1 p-1 min-w-[200px] ">
-          <h4 className=" px-5 py-1 text-justify my-10 text-2xl">
+        <div className="flex-1  min-w-[200px] ">
+          <h4 className=" px-5 py-1+++ text-justify my-10 text-2xl">
             Sobre Nosotros
           </h4>
           <p className="text-justify">

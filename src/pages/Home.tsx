@@ -15,10 +15,7 @@ function Home({}: Props) {
       <HeroImage />
       <CardSection />
       <InfoSection />
-
       <Footer/>
-=======
-
     </>
   );
 }
