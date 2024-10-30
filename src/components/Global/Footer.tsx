@@ -56,7 +56,7 @@ const Footer = () => {
 
       <div className="mt-[20px] p-[10px]">
         <p>
-          &copy; {new Date().getFullYear()} Mi App Musical. Todos los derechos
+          &copy; {new Date().getFullYear()} Renvital tiene Todos los derechos
           reservados.
         </p>
       </div>
