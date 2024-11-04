@@ -50,7 +50,7 @@ function NavBar() {
               </li>
               <li>
                 <Link
-                  to={"/login"}
+                  to={"/"}
                   className="block py-2 px-3  text-emerald-700 rounded md:p-0 "
                 >
                   Login
