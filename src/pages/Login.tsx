@@ -1,5 +1,4 @@
 import NavBar from "../components/Global/NavBar";
-import CardLogin from "../components/Login/CardLogin";
 
 import Footer from "../components/Global/Footer";
 
