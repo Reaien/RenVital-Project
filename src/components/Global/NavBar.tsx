@@ -49,8 +49,8 @@ function NavBar() {
               </li>
               <li>
                 <Link
-                  to={"/login"}
-                  className="hover:scale-[1.1] block py-2 px-3  text-black rounded md:p-0 "
+                  to={"/"}
+                  className="block py-2 px-3  text-emerald-700 rounded md:p-0 "
                 >
                   Login
                 </Link>
