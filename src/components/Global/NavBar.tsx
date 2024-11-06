@@ -4,13 +4,12 @@ import logo from "../../assets/images/logo.png";
 function NavBar() {
   return (
     <>
-      <nav className="bg-white border-gray-200 ">
+      <nav className="bg-white border-gray-200 bg-gradient-to-b  from-teal-300/60">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src={logo} className="h-12" alt="RenVital Logo" />
-            <div className="flex flex-col text-emerald-700 font-semibold">
+            <div className="flex flex-col text-black font-semibold">
               <span className="text-2xl whitespace-nowrap">RenVital</span>
-              <span>Prevención y control renal</span>
             </div>
           </a>
           <div className="hidden w-full md:block md:w-auto">
@@ -18,7 +17,7 @@ function NavBar() {
               <li>
                 <Link
                   to={"/"}
-                  className="block py-2 px-3 text-emerald-700 rounded md:p-0 "
+                  className="hover:scale-[1.1] block py-2 px-3 text-black rounded md:p-0 "
                 >
                   Inicio
                 </Link>
@@ -27,7 +26,7 @@ function NavBar() {
               <li>
                 <Link
                   to={"/info"}
-                  className="block py-2 px-3 text-emerald-700 rounded md:p-0 "
+                  className="hover:scale-[1.1] block py-2 px-3 text-black rounded md:p-0 "
                 >
                   Infórmate
                 </Link>
@@ -35,15 +34,15 @@ function NavBar() {
               <li>
                 <Link
                   to={"/comunidad"}
-                  className="block py-2 px-3  text-emerald-700 rounded md:p-0 "
+                  className="hover:scale-[1.1] block py-2 px-3  text-black rounded md:p-0 "
                 >
                   Comunidad
                 </Link>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="block py-2 px-3  text-emerald-700 rounded md:p-0 "
+                  href="/Comida"
+                  className="hover:scale-[1.1] block py-2 px-3  text-black rounded md:p-0 "
                 >
                   Alimentación
                 </a>
@@ -51,7 +50,7 @@ function NavBar() {
               <li>
                 <Link
                   to={"/login"}
-                  className="block py-2 px-3  text-emerald-700 rounded md:p-0 "
+                  className="hover:scale-[1.1] block py-2 px-3  text-black rounded md:p-0 "
                 >
                   Login
                 </Link>

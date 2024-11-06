@@ -2,15 +2,18 @@ import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa"; // Importa 
 
 const Footer = () => {
   return (
-    <footer className=" px-10 py-0 text-center bg-gradient-to-b bg-emerald-300/60 from-white ">
-      <div className="inline-flex justify-between max-w-[1000px] m-0 flex-wrap">
+    <footer className="flex-col min-h-full text-center bg-gradient-to-b bg-teal-300/60 from-white ">
+      <div className=" inline-flex justify-between max-w-[1000px] m-0 flex-wrap">
         <div className="flex-1  min-w-[200px] ">
           <h4 className=" px-5 py-1+++ text-justify my-10 text-2xl">
             Sobre Nosotros
           </h4>
-          <p className="text-justify">
-            Somos una compañía dedicada a la música y a compartir las mejores
-            playlists con el mundo.
+          <p className=" text-justify text-sm">
+            Somos una asociación creada a través de la colaboración
+            internacional entre el Tecnológico de Monterrey y DuocUC Viña del
+            mar entre estudiantes de Medicína e Ingeniería en informática para
+            ofrecer una solución tecnológica a pacientes con trastornos renales
+            y promover un mejor estilo de vida.
           </p>
         </div>
 
