@@ -3,7 +3,7 @@ import HeroImage from "../components/Home/HeroImage";
 import Comidas from "../components/Alimentacion/Comidas";
 
 import Footer from "../components/Global/Footer";
-import img from "../assets/images/breakfast-icon.jpg";
+import img from "../assets/images/baneer2.jpg";
 
 type Props = {};
 
