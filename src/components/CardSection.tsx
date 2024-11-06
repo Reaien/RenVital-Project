@@ -9,7 +9,7 @@ type Props = {};
 function CardSection({}: Props) {
   return (
     <>
-      <section className="lg:flex gap-16 justify-center grid">
+      <section className="lg:flex gap-16 justify-center grid ">
         <Link to={"/info"}>
           <Card
             texto2={"Revisa aquí"}
@@ -19,14 +19,15 @@ function CardSection({}: Props) {
             icon={<HiOutlineBookOpen className="h-20 w-20 text-emerald-700" />}
           />
         </Link>
-
+        <Link to={"/Comida"}>
+          <Card
+            texto2={"Revisa aquí"}
+            texto1={"Explora las opciones alimenticias para una vida saludable"}
+            icon={<PiBowlFood className="h-20 w-20 text-emerald-700" />}
+          />
+        </Link>
         <Card
           texto2={"Revisa aquí"}
-          texto1={"Explora las opciones alimenticias para una vida saludable"}
-          icon={<PiBowlFood className="h-20 w-20 text-emerald-700" />}
-        />
-        <Card
-          texto2={"Revisa aquí"}  
           texto1={"Preguntale a nuestros especialistas sobre dudas específicas"}
           icon={<FaCommentMedical className="h-20 w-20 text-emerald-700" />}
         />

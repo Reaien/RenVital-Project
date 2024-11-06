@@ -1,25 +1,25 @@
-import HeroPhoto from "../../assets/images/banner.jpg";
+type Props = {
+  texto1?: string;
+  Texto2?: string;
+  img: string;
+  tamaño?: String;
 
-type Props = {};
+};
 
-function HeroImage({}: Props) {
+function HeroImage({texto1, img, Texto2, tamaño}: Props) {
   return (
     <>
       <section className="md:h-[600px]  md:flex md:justify-center">
         <div className="md:text-left text-center  md:text-4xl text-2xl  md:w-5/12 content-center">
-          <p className="text-emerald-700 font-bold">
-            Cuidamos de tu salud renal: Información confiable, planes
-            alimenticios y apoyo médico a un clic de distancia.
+          <p className="text-emerald-700 font-bold text-justify">
+           {Texto2}
           </p>
-          <p className="text-base md:w-10/12 italic">
-            Explora recursos actualizados, consejos médicos y herramientas
-            interactivas diseñadas para acompañarte en el manejo de tu salud
-            renal. Estamos aquí para ayudarte a tomar decisiones informadas y
-            mejorar tu calidad de vida.
+          <p className="text-base md:w-10/12 italic text-justify">
+            {texto1}
           </p>
         </div>
 
-        <img className="md:ml-32" src={HeroPhoto} alt="" />
+        <img className={`${tamaño}`} src={img} alt="" />
       </section>
     </>
   );

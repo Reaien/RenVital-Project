@@ -9,7 +9,7 @@ type Props = {
 function Card({ icon, texto1, texto2 }: Props) {
   return (
     <>
-      <div className="hover:cursor-pointer mb-6 px-6 bg-emerald-300/15 max-w-[400px] max-h-[360px] h-[360px] max-md:mx-2  shadow-lg rounded-xl border ">
+      <div className="hover:cursor-pointer hover:scale-[1.1] mb-6 px-6 bg-gradient-to-br bg-cyan-600 from-green-300 max-w-[400px] max-h-[360px] h-[360px] max-md:mx-2  shadow-lg rounded-xl border ">
         <div className="flex justify-center">
           <div className=" w-36 border shadow-xl items-center mt-7 rounded-full bg-white p-8">
             {icon}
