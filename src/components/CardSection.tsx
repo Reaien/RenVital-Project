@@ -9,7 +9,7 @@ type Props = {};
 function CardSection({}: Props) {
   return (
     <>
-      <section className="lg:flex gap-16 justify-center grid ">
+      <section className="lg:flex  gap-16 justify-center grid ">
         <Link to={"/info"}>
           <Card
             texto2={"Revisa aquí"}

@@ -5,8 +5,8 @@ type Props = {};
 function HeroImage({}: Props) {
   return (
     <>
-      <section className="md:h-[600px]  md:flex md:justify-center">
-        <div className="md:text-left text-center  md:text-4xl text-2xl  md:w-5/12 content-center">
+      <section className="xl:h-[600px]  lg:flex md:justify-center">
+        <div className="md:text-left text-center  md:text-4xl text-2xl  xl:w-5/12 content-center">
           <p className="text-emerald-700 font-bold">
             Cuidamos de tu salud renal: Información confiable, planes
             alimenticios y apoyo médico a un clic de distancia.
@@ -19,7 +19,7 @@ function HeroImage({}: Props) {
           </p>
         </div>
 
-        <img className="md:ml-32" src={HeroPhoto} alt="" />
+        <img className="xl:ml-32" src={HeroPhoto} alt="" />
       </section>
     </>
   );
