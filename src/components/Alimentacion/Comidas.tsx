@@ -23,7 +23,7 @@ function Comidas({}: Props) {
             }
           />
         </Link>
-        <Link to={"/info"}>
+        <Link to={"/Snack"}>
           <Card
             texto2={"Snack ->"}
             texto1={
@@ -32,7 +32,7 @@ function Comidas({}: Props) {
             icon={<FaPlateWheat className="h-20 w-20 text-emerald-700" />}
           />
         </Link>
-        <Link to={"/info"}>
+        <Link to={"/Almuerzo"}>
           <Card
             texto2={"Almuerzo ->"}
             texto1={
@@ -41,13 +41,17 @@ function Comidas({}: Props) {
             icon={<PiBowlFood className="h-20 w-20 text-emerald-700" />}
           />
         </Link>
+        <Link to={"/Merienda"}>
         <Card
           texto2={"Merienda ->"}
           texto1={
             "Disfruta de una merienda saludable y deliciosa, perfecta para reponer energías y mantenerte activo."
           }
           icon={<GiFruitBowl className="h-20 w-20 text-emerald-700" />}
+          
         />
+        </Link>
+        <Link to={"/Cena"}>
         <Card
           texto2={"Cena ->"}
           texto1={
@@ -57,6 +61,7 @@ function Comidas({}: Props) {
             <MdOutlineDinnerDining className="h-20 w-20 text-emerald-700" />
           }
         />
+         </Link>
       </section>
     </>
   );
