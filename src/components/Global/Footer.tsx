@@ -1,5 +1,3 @@
-import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa"; // Importa los iconos que necesites
-
 const Footer = () => {
   return (
     <footer className="px-7  bg-gradient-to-b bg-emerald-300/60 from-white mt-48">
