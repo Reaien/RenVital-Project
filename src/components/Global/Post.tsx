@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
+
 import profilePic from "../../assets/images/profile-pic.png";
 import profilePic2 from "../../assets/images/profile-pic2.jpg";
 import axios from "axios";
+import Modal from "./Modal";
+import FormNewPost from "../Comunidad/FormNewPost";
+import FormNewResponse from "../Comunidad/FormNewResponse";
 
 type Respuesta = {
   id: number;
@@ -56,12 +60,21 @@ function Post({}: Props) {
     getPosts();
   }, []);
 
+  //state que controla el modal
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <>
-      <div className="flex m-4 justify-center md:pr-[520px] font-bold mt-10 text-zinc-700">
-        ÚLTIMAS PUBLICACIONES
+      <div className="md:grid grid-cols-2 m-4 justify-items-center ">
+        <div className="font-bold  text-zinc-700  ">ÚLTIMAS PUBLICACIONES</div>
+        <button
+          onClick={() => setOpenModal(true)}
+          className="font-semibold px-9 py-2 rounded bg-emerald-600 text-white"
+        >
+          CREAR PUBLICACIÓN
+        </button>
       </div>
-      <section className="flex justify-center">
+      <section className="grid gap-8 justify-center">
         {posts.map((post) => (
           <div
             key={post.id}
@@ -125,16 +138,23 @@ function Post({}: Props) {
                 No hay respuestas aún.
               </p>
             )}
-            <form className="grid p-8 min-h-[100px]">
-              <input
-                placeholder="Deja tu comentario..."
-                type="text"
-                className="border-2 p-1"
-              />
-            </form>
+            <FormNewResponse post={post.id} getPosts={() => getPosts()} />
           </div>
         ))}
       </section>
+      <Modal
+        onClose={() => {
+          setOpenModal(false);
+        }}
+        open={openModal}
+      >
+        <FormNewPost
+          onClose={() => {
+            setOpenModal(false);
+          }}
+          getPosts={() => getPosts()}
+        />
+      </Modal>
     </>
   );
 }
