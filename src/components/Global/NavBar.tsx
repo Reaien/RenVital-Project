@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import { useState } from "react";
+import Modal from "./Modal";
+import LoginButtons from "./LoginButtons";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,6 +10,9 @@ function NavBar() {
   const toggleNavBar = () => {
     setIsOpen(!isOpen);
   };
+
+  //state que controla el modal
+  const [openModal, setOpenModal] = useState(false);
 
   return (
     <>
@@ -58,12 +63,12 @@ function NavBar() {
                 </a>
               </li>
               <li>
-                <Link
-                  to={"/"}
+                <button
+                  onClick={() => setOpenModal(true)}
                   className="block py-2 px-3  text-emerald-700 rounded md:p-0 "
                 >
                   Login
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
@@ -112,16 +117,21 @@ function NavBar() {
                 </a>
               </li>
               <li>
-                <Link
-                  to={"/"}
-                  className="block py-2 px-3  text-emerald-700 rounded md:p-0 "
-                >
+                <button className="block py-2 px-3  text-emerald-700 rounded md:p-0 ">
                   Login
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
         )}
+        <Modal
+          onClose={() => {
+            setOpenModal(false);
+          }}
+          open={openModal}
+        >
+          <LoginButtons />
+        </Modal>
       </nav>
     </>
   );

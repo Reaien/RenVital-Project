@@ -81,7 +81,7 @@ function Post({}: Props) {
           {posts.map((post) => (
             <div
               key={post.id}
-              className="max-md:mx-10 w-[720px] min-h-[300px] rounded-xl shadow-xl border-2"
+              className="max-md:mx-10 lg:w-[720px] min-h-[300px] rounded-xl shadow-xl border-2"
             >
               <div className="grid grid-cols-4 gap-1 md:gap-0 md:grid-cols-8 m-4 h-[70px] items-center">
                 <div>
