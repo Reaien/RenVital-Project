@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useForm } from "react-hook-form";
+import { useUser } from "../../contexts/UserContext";
 
 type Props = {
   post: number;
@@ -31,13 +32,17 @@ function FormNewResponse({ post, getPosts }: Props) {
     return `${horas}:${minutos}:${segundos}`;
   };
 
+  //hook user
+  const { user } = useUser();
+
   const axiosInstance = axios.create({
     baseURL: "http://localhost:8080",
     withCredentials: true,
   });
   const onSubmit = async (data: FormData) => {
     const payLoad = {
-      autor: "Ando Medico",
+      autor: user?.name,
+      picture: user?.picture,
       fecha: obtenerFechaActual(),
       hora: obtenerHoraActual(),
       mensaje: data.mensaje,

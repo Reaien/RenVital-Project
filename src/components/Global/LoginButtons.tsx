@@ -1,35 +1,9 @@
 import Title from "./Title";
 import google_icon from "../../assets/images/google-icon.svg";
-import { useEffect, useState } from "react";
-import axios from "axios";
 
 type Props = {};
 
-type User = {
-  email: string;
-  name: string;
-  picture: string;
-};
-
 function LoginButtons({}: Props) {
-  const [user, setUser] = useState<User>();
-
-  const axiosInstance = axios.create({
-    baseURL: "http://localhost:8080",
-    withCredentials: true,
-  });
-
-  const getUser = () => {
-    axiosInstance.get("/user-info").then((response) => {
-      setUser(response.data);
-    });
-  };
-
-  useEffect(() => {
-    getUser();
-    console.log(user);
-  }, []);
-
   const handleClick = () => {
     window.location.href = "http://localhost:8080/login/oauth2/code/google";
   };
