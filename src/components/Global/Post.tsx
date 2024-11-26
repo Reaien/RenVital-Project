@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-
-import profilePic from "../../assets/images/profile-pic.png";
 import axios from "axios";
 import Modal from "./Modal";
 import FormNewPost from "../Comunidad/FormNewPost";
