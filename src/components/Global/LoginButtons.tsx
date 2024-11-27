@@ -5,7 +5,8 @@ type Props = {};
 
 function LoginButtons({}: Props) {
   const handleClick = () => {
-    window.location.href = "http://localhost:8080/login/oauth2/code/google";
+    window.location.href =
+      "https://7242-52-45-88-219.ngrok-free.app/login/oauth2/code/google";
   };
 
   return (

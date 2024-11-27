@@ -30,7 +30,7 @@ function Post({}: Props) {
   const [posts, setPosts] = useState<Posts[]>([]);
 
   const axiosInstance = axios.create({
-    baseURL: "http://localhost:8080",
+    baseURL: "https://7242-52-45-88-219.ngrok-free.app",
     withCredentials: true,
   });
 
@@ -46,13 +46,13 @@ function Post({}: Props) {
       } else {
         // Si no está autenticado, redirige al login de OAuth
         window.location.href =
-          "http://localhost:8080/oauth2/authorization/google";
+          "https://7242-52-45-88-219.ngrok-free.app/oauth2/authorization/google";
       }
     } catch (error: any) {
       console.error("Error:", error);
       // Redirigir a OAuth si hay cualquier error de autenticación
       window.location.href =
-        "http://localhost:8080/oauth2/authorization/google";
+        "https://7242-52-45-88-219.ngrok-free.app/oauth2/authorization/google";
     }
   };
 

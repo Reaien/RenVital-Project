@@ -34,7 +34,7 @@ export const UserProvider: React.FC<{ children: React.ReactNode }> = ({
     try {
       setLoading(true);
       const response = await axios.get<UserInfo>(
-        "http://localhost:8080/user-info",
+        "https://7242-52-45-88-219.ngrok-free.app/user-info",
         {
           withCredentials: true,
         }

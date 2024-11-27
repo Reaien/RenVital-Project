@@ -36,7 +36,7 @@ function FormNewPost({ getPosts, onClose }: Props) {
 
   //Solicitud POST Post
   const axiosInstance = axios.create({
-    baseURL: "http://localhost:8080",
+    baseURL: "https://7242-52-45-88-219.ngrok-free.app",
     withCredentials: true,
   });
   const onSubmit = async (data: FormData) => {
