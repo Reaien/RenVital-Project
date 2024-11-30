@@ -21,6 +21,7 @@ type Posts = {
   fecha: string;
   hora: string;
   mensaje: string;
+  rol: string;
   respuestas: Respuesta[];
 };
 
@@ -30,7 +31,7 @@ function Post({}: Props) {
   const [posts, setPosts] = useState<Posts[]>([]);
 
   const axiosInstance = axios.create({
-    baseURL: "https://7242-52-45-88-219.ngrok-free.app",
+    baseURL: "http://localhost:8080",
     withCredentials: true,
   });
 
@@ -46,13 +47,13 @@ function Post({}: Props) {
       } else {
         // Si no está autenticado, redirige al login de OAuth
         window.location.href =
-          "https://7242-52-45-88-219.ngrok-free.app/oauth2/authorization/google";
+          "http://localhost:8080/oauth2/authorization/google";
       }
     } catch (error: any) {
       console.error("Error:", error);
       // Redirigir a OAuth si hay cualquier error de autenticación
       window.location.href =
-        "https://7242-52-45-88-219.ngrok-free.app/oauth2/authorization/google";
+        "http://localhost:8080/oauth2/authorization/google";
     }
   };
 
@@ -97,8 +98,12 @@ function Post({}: Props) {
                 <div className="col-span-3 md:col-span-7">
                   <div className="flex gap-7 items-center">
                     <p className="font-bold">{post.autor}</p>
-                    <p className="text-white bg-emerald-700 rounded-lg text-xs md:text-base px-3 md:px-9">
-                      {user?.role == "ROLE_USER" && "Paciente"}
+                    <p
+                      className={`text-white rounded-lg text-xs md:text-base px-3 md:px-9 ${
+                        post.rol === "Médico" ? "bg-blue-700" : "bg-emerald-700"
+                      }`}
+                    >
+                      {post.rol}
                     </p>
                   </div>
                   <div>
@@ -125,8 +130,12 @@ function Post({}: Props) {
                       <div className="col-span-3 md:col-span-7">
                         <div className="flex gap-7 items-center">
                           <p className="font-bold">{respuesta.autor}</p>
-                          <p className="text-white bg-sky-700 rounded-lg text-xs md:text-base px-3 md:px-9">
-                            {user?.role == "ROLE_MEDICO" && "Médico"}
+                          <p
+                            className={`text-white rounded-lg text-xs md:text-base px-3 md:px-9  bg-blue-700
+                              "bg-blue-700"
+                            `}
+                          >
+                            Médico
                           </p>
                         </div>
                         <p className="text-zinc-500">

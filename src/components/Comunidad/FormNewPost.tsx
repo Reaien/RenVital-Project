@@ -36,16 +36,25 @@ function FormNewPost({ getPosts, onClose }: Props) {
 
   //Solicitud POST Post
   const axiosInstance = axios.create({
-    baseURL: "https://7242-52-45-88-219.ngrok-free.app",
+    baseURL: "http://localhost:8080",
     withCredentials: true,
   });
   const onSubmit = async (data: FormData) => {
+    const rol = () => {
+      if (user?.role !== "ROLE_MEDICO") {
+        return "Paciente";
+      } else {
+        return "Médico";
+      }
+    };
+
     const payLoad = {
       autor: user?.name,
       picture: user?.picture,
       fecha: obtenerFechaActual(),
       hora: obtenerHoraActual(),
       mensaje: data.mensaje,
+      rol: rol(),
     };
     console.log(payLoad);
 

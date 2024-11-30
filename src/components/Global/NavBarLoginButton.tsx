@@ -12,7 +12,7 @@ function NavBarLoginButton({}: Props) {
 
   const handleLogOut = async () => {
     const axiosInstance = await axios.create({
-      baseURL: "https://7242-52-45-88-219.ngrok-free.app",
+      baseURL: "http://localhost:8080",
       withCredentials: true,
     });
 
